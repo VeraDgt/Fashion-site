@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(34, 38, 42, 1);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+a:hover, nav li:hover, .shopping i:hover {
+  color:orangered;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.logo {
+font-size: 1.8vw;
+font-weight: 700;
+min-width: 97px;
+text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 18px;
+}
+
+.navbar li {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.shopping {
+  min-width: 179px;
+}
+
+.shopping i {
+  margin-left: 40px;
+  cursor: pointer;
+}
+.promo-wrapper {
+  position: relative;
+  padding-top: 46.5%;
+}
+.promo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+}
+.promo-on-top {
+  padding-top: 23.25%;
+  width: 100%;
+  height: auto;
+  max-height: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.promo-title {
+  margin-right: 8%;
+}
+
+.promo h2 {
+  font-size: 5.5vw;
+  font-weight: 700;
+}
+
+.promo-description {
+  text-transform: none;
+  font-size: 18px;
+} 
+
+.button {
+  color: rgba(255, 255, 255, 1);
+  background-color: 
+  rgba(34, 38, 42, 1);
+  min-width: 147px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 420%;
+  padding: 4px 28px;
+  margin-right: 24px;
+}
+
+.button:hover {
+  background-color: rgb(61, 62, 63);
+}
+
+main, .contacts {
+  width: 100%;
+  margin: auto;
+}
+
+.cards {
+  margin-top: 4%;
+}
+
+.top-fashion-collage {
+  width: 90%;
+  max-width: 1140px;
+  display: grid;
+  margin: 11% auto 7%;
+  grid-template-areas: "img-2 img-2 img-5 img-5" "img-3 img-4 img-5 img-5";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2vw;
+  min-width: 210px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img-2 {
+  grid-area: img-2;
+}
+
+.img-3 {
+  grid-area: img-3;
+}
+
+.img-4 {
+  grid-area: img-4;
+  margin-left: 0.5vw;
+}
+
+.img-5 {
+  grid-area: img-5;
+  margin-left: 1vw;
+}
+
+.button-reverse {
+  display: inline-block;
+}
+
+.top-fashion-collage >div >img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-5{
+  background-image: url("/img/5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-5-contrast-glass {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.buttons-white {
+  display: inline-block;
+  margin-left: 28px;
+  margin-top: 95.2%;
+}
+.button-white {
+background-color: rgba(255, 255, 255, 1);
+color:rgba(34, 38, 42, 1);
+min-width: 160px;
+}
+
+.fashion {
+  width: 100%;
+}
+
+.fashion p {
+  text-transform: none;
+}
+
+.fashion-header {
+  text-align: center;
+  line-height: 2;
+}
+
+.fashion-header h1, .contacts h3 {
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+.fashion-cards {
+display: flex;
+justify-content: center;
+gap: 22px;
+flex-wrap: wrap;
+}
+
+.fashion-card {
+line-height: 2;
+}
+
+.fashion-card:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.fashion-card h2 {
+  color: rgba(34, 38, 42, 1);
+  font-weight: 300;
+  margin-top: 38px;
+}
+
+.fashion-card p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color:rgba(34, 38, 42, 1)
+}
+
+.new-price {
+  margin-left: 2.2vw;
+  color: rgba(207, 41, 41, 1);
+}
+
+.fashion-styles-cards {
+  display: flex;
+  width: 100%;
+  max-height: 840px;
+  justify-content: center;
+  margin-bottom: 6vw;
+}
+
+.img-style {
+  border: 1.2vw solid #fff;
+}
+
+.img-style:nth-of-type(1) {
+  margin-top: 7vw;
+}
+
+.img-style:nth-of-type(3) {
+  margin-top: 28vw;
+  margin-left: -15vw;
+}
+
+.buttons-style {
+  margin-top: -5vw;
+  margin-left: -15vw;
+}
+
+.button-style {
+  background-color: #fff;
+  border: 5px solid rgba(255, 255, 255, 1)
+}
+
+.promo-on-bottom {
+  margin: 23vw 10vw;
+  width: 40%;
+}
+
+.contacts {
+  display: flex;
+  max-width: 100%;
+  background-color: #F2F8FC;
+}
+
+.company-address, .company-info {
+  display: inline-block;
+  width: 50%;
+  padding: 5vw 12vw;
+}
+
+.company-address {
+  padding-right: 7vw;
+}
+
+.company-info {
+  padding-left: 0;
+}
+
+.contacts {
+  line-height: 3;
+}
+
+.contacts p, .contacts span, .contacts a {
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.company-address p {
+  line-height: normal;
+}
+
+address {
+  margin-top: 3vw;
+}
+
+.company-address a:nth-of-type(1) {
+  padding-bottom: 10px;
+  border-bottom: 2px solid 
+}
+
+.social-networks {
+  letter-spacing: 10px;
+}
+
+.subscribe-form, .subscribe-button {
+  background-color: #FFFFFF;
+  padding: 1vw 2vw;
+}
+
+.subscribe-form-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.email {
+  outline: none;
+  border: none;
+  text-transform: none;
+  width: 23vw;
+  overflow: hidden;
+}
+
+.subscribe-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.social-networks i:hover, .subscribe-button:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.more-about-us {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+  height: 6vw;
+  background-color: rgba(231, 245, 248, 1);
+}
+
+.footer p {
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+}
+
+
