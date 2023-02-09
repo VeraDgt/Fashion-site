@@ -10,13 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Fashion shop</title>
   </head>
   <body>
     <header class="navbar">
       <a class="logo" href="#">Your Logo</a>
-      <nav>
+      <nav class="nav">
         <ul>
           <li>Home</li>
           <li>Shop</li>
@@ -31,6 +31,9 @@
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
     </header>
     <aside class="promo-wrapper">
       <img class="promo" src="/img/coll.png" alt="Collusion" />
@@ -185,8 +188,8 @@
       <div class="company-address">
         <h3>Your logo</h3>
         <p>
-          We earned a reputation of being good at what we do. Let us take your online shop to new
-          dimension in success!
+          We earned a reputation of being good at what we do.<br />
+          Let us take your online shop to new dimension in success!
         </p>
         <address>
           <i class="fa-solid fa-location-crosshairs"></i>
@@ -219,8 +222,8 @@
           <div>
             <h3>Help</h3>
             <p><a href="#">FAQ</a></p>
-            <p><a href="#">Privecy Policy</a></p>
-            <p><a href="#">Tearms and conditions</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms and conditions</a></p>
             <p><a href="#">Return and Exchanges</a></p>
           </div>
           <div>
@@ -233,7 +236,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer"><p>Copyright © 2020 . Your company name All rights reserved</p></footer>
+    <footer class="footer"><p>Copyright © 2020. Your company name All rights reserved</p></footer>
     <script src="https://kit.fontawesome.com/adced2b3ab.js" crossorigin="anonymous"></script>
   </body>
 </html>
