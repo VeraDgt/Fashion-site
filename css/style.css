@@ -472,12 +472,10 @@ address {
   transform: rotate(45deg);
   top:0;
 }
-.promo-title {
-  margin: 2vw;
+.promo-on-top {
+  margin: 3vw;
 }
-.buttons-white {
-  margin-left: -100px;
-}
+
 .buttons-style {
   margin-left: -170px;
 }
@@ -493,9 +491,16 @@ address {
 .email {
   width: 100%;
 }
+
+.footer p {
+  font-size: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
 .more-about-us {
   display: block;
 }
-.footer p {
-  font-size: 2.5vw;
+.buttons-white {
+  margin-left: -100px;
+}
 }
