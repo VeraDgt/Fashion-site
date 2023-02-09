@@ -495,6 +495,7 @@ address {
 .footer p {
   font-size: 2.5vw;
 }
+}
 
 @media screen and (max-width: 600px) {
 .more-about-us {
