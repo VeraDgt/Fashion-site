@@ -1,4 +1,5 @@
-* {box-sizing: border-box;
+* {
+  box-sizing: border-box;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: rgba(34, 38, 42, 1);
@@ -59,8 +60,8 @@ text-decoration: none;
   font-size: 18px;
 }
 .promo-on-top {
-  padding-top: 39vw;
-  width: 100%;
+  padding-top: 42vw;
+  width: 96%;
   height: auto;
   max-height: 50%;
   display: flex;
@@ -70,6 +71,7 @@ text-decoration: none;
 
 .promo-title {
   margin-right: 8%;
+  margin-bottom: 2.2vw;
 }
 
 .promo h2 {
@@ -430,10 +432,6 @@ address {
   top: -5px;
 }
 
-.side-menu {
-  display: none;
-} /* Hide checkbox */
-
 .nav ul{
   display: block;
   width: 0;
@@ -504,4 +502,65 @@ address {
 .buttons-white {
   margin-left: -100px;
 }
+}
+
+@media  screen and (max-width: 550px) {
+
+  .shopping {
+    min-width: 80px;
+    text-align: end;
+    margin-right: 12px;
+  }
+  .shopping i {
+    margin-left: 8px;
+  }
+
+.button {
+  font-size: 12px;
+  padding: 5px 18px;
+}
+
+.promo-title p {
+  font-size: 14px;
+}
+
+.buttons-white {
+  width: 170px;
+  margin-left: -70px;
+}
+
+.fashion-header h1
+{
+  font-size: 18px;
+}
+.fashion-header p {
+  text-transform: none;
+  font-size: 13px;
+}
+.fashion-card h2, .fashion-card p, .price {
+  margin-left: 12px;
+}
+.fashion-card p {
+  font-size: 12px;
+}
+
+.contacts {
+  font-size: 10px;
+  line-height: 2;
+}
+
+.contacts h3 {
+  font-size: 15px;
+}
+.company-address a {
+  font-size: 12px;
+}
+.social-networks i {
+  margin-top: 12px;
+  font-size: 24px;
+}
+.company-address a:nth-of-type(1) {
+  padding-bottom: 5px;
+}
+
 }
