@@ -10,37 +10,56 @@
   display: none;
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 a:hover, nav li:hover, .shopping i:hover {
   color:orangered;
 }
 
-.navbar {
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.menu-wrap, .mobile-menu-wrap {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+
+.mobile-menu-wrap {
+  width: 100%;
+}
+
+.menu-wrap {
   margin: 20px auto;
 }
 
 .logo {
 font-size: 1.8vw;
 font-weight: 700;
-min-width: 97px;
 text-decoration: none;
+white-space: nowrap;
+margin-left: 20px;
 }
 
-.navbar ul {
+.nav ul {
   list-style-type: none;
   display: flex;
   font-size: 18px;
 }
 
-.navbar li {
+.nav li {
   margin-left: 30px;
   cursor: pointer;
 }
 
 .shopping {
-  min-width: 179px;
+  white-space: nowrap;
 }
 
 .shopping i {
@@ -381,6 +400,7 @@ address {
 }
 
 @media screen and (max-width: 1060px) {
+
   .contacts {
     display: block;
   }
@@ -401,9 +421,23 @@ address {
 .logo {
   font-size: 18px;
 }
+
+.mobile-menu-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 18vw;
+}
+
+.shopping {
+  justify-self: center;
+}
+
 /* Menu Icon */
 .hamb{
   cursor: pointer;
+  margin-left: auto;
+  margin-right: 8vw;
+  align-self: center;
 }/* Style label tag */
 
 .hamb-line {
@@ -432,33 +466,39 @@ address {
   top: -5px;
 }
 
-.nav ul{
-  display: block;
-  width: 0;
+.nav {
+  width: 100%;
   height: 100%;
+  margin-top: 38px;
   position: fixed;
   background-color: #FFFFFF;
+  z-index: 1;
+  
   overflow: hidden;
 }
+.nav ul {
+  display: block;
+  width: 100%;
+}
 
-.nav ul{
+.menu a{
+  display: block;
+  padding: 30px;
+}
+
+.nav{
   max-height: 0;
   transition: max-height .5s ease-out;
 }
-/* Toggle menu icon */
 
-.side-menu:checked ~ .nav ul{
-  width: 100%;
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
   max-height: 100%;
-  padding: 30px;
-  color:  rgba(34, 38, 42, 1);
 }
 
-/* .side-menu:checked ~ .nav li{
-  width: 800px;
-  
-} */
-
+.side-menu:checked ~ .menu {
+  z-index: 1;
+}
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
 }
@@ -496,6 +536,7 @@ address {
 }
 
 @media screen and (max-width: 600px) {
+
 .more-about-us {
   display: block;
 }
@@ -507,7 +548,7 @@ address {
 @media  screen and (max-width: 550px) {
 
   .shopping {
-    min-width: 80px;
+    white-space: nowrap;
     text-align: end;
     margin-right: 12px;
   }

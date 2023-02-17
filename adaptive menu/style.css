@@ -1,12 +1,215 @@
-/* Theming */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(34, 38, 42, 1);
+    font-size: 15px;
+    text-transform: uppercase;
+    }
+.header {outline: 1px solid red;
+}
+.nav { outline: 1px solid yellow; 
+}
+.nav ul {
+  outline: 1px solid blue;
+}
+.vav li {
+  outline: 1px solid blueviolet;
+}
+.vav a {
+  outline: 1px solid green;
+}}
+    a:hover, nav li:hover, .shopping i:hover {
+    color:orangered;
+    }
 
+    .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 100%;
+    }
+
+    .menu-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    }
+
+    .logo {
+    font-size: 1.8vw;
+    font-weight: 700;
+    min-width: 97px;
+    text-decoration: none;
+    }
+
+    .nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    }
+
+    .nav li {
+    margin-left: 30px;
+    cursor: pointer;
+    }
+
+    .shopping {
+    min-width: 179px;
+    }
+
+    .shopping i {
+    margin-left: 40px;
+    cursor: pointer;
+    }
+
+    article {
+    margin-top: 80px;
+    }
+
+    .side-menu {
+      display: none;
+      }
+
+
+  @media screen and (max-width: 855px) {
+
+  .logo {
+    font-size: 18px;
+  } */
+  
+  /* Menu Icon */
+  /* .hamb {
+    cursor: pointer;
+  }Style label tag */
+  
+  /* .hamb-line {
+    background: rgba(34, 38, 42, 1);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  
+  } Style span tag */
+  
+  /* .hamb-line::before,
+  .hamb-line::after{
+    background: rgba(34, 38, 42, 1);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .hamb-line::before{
+    top: 5px;
+  }
+  .hamb-line::after{
+    top: -5px;
+  }
+  .nav {
+    outline: 1px solid yellow;
+    position: absolute;
+    max-height: 0;
+    width: 100%;
+    transition: max-height .5s ease-out;
+    overflow-y: hidden;
+  }
+
+  .menu {
+    outline: 1px solid orangered;
+    height: 250px;
+  }
+
+  .nav ul {
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(131, 245, 248, 1), #FFFFFF);
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+  .nav li {
+    padding: 24px 58px;
+    margin-left: -38px;
+    background-color: #FFFFFF;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  } */
+  /* Toggle menu icon */
+  /* .side-menu:checked ~ .nav {
+    transform: translateY(250px);
+    overflow: visible;
+  }
+  .side-menu:checked ~ .nav ul {
+    
+    overflow: visible;
+    position: fixed;
+    z-index: 1;
+    margin-top: 24px;
+    max-height: 100%;
+    background: linear-gradient(to top, rgba(131, 245, 248, 1), #FFFFFF);
+    transition: max-height .5s ease-out;
+    width: 100%;
+    padding: 30px;
+    color:  rgba(34, 38, 42, 1);
+  } */
+  
+  /* .side-menu:checked ~ .nav li{
+    width: 800px;
+    
+  } */
+  
+  /* .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+  }
+  } */
+  
+  /* @media screen and (max-width: 600px) {
+    .promo-wrapper {
+      margin-top: 18vw;
+    }
+  .more-about-us {
+    display: block;
+  }
+  .buttons-white {
+    margin-left: -100px;
+  }
+  }
+  
+  @media  screen and (max-width: 550px) {
+   
+    .shopping {
+      min-width: 80px;
+      text-align: end;
+      margin-right: 12px;
+    }
+    .shopping i {
+      margin-left: 8px;
+    }  
+  } */
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+ 
 :root{
     --white: #f9f9f9;
     --black: #36383F;
     --gray: #85888C;
 } /* variables*/
-
+ 
 /* Reset */
 *{
     margin: 0;
@@ -23,6 +226,7 @@ a{
 ul{
     list-style: none;
 }
+
 /* Header */
 .header{
     background-color: var(--black);
@@ -38,43 +242,42 @@ ul{
     font-size: 60px;
     margin-left: 10px;
 }
-/* Nav menu */
 .nav{
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: var(--black);
     overflow: hidden;
-
+    outline: 1px solid red;
+ 
 }
 .menu a{
     display: block;
     padding: 30px;
     color: var(--white);
 }
-.menu a:hover{
-    background-color: var(--gray);
-}
+/* .menu a:hover{
+    background-color: var(--gray); 
+}*/
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
-/* Menu Icon */
 .hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
 }/* Style label tag */
-
+ 
 .hamb-line {
     background: var(--white);
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
-
+ 
 } /* Style span tag */
-
+ 
 .hamb-line::before,
 .hamb-line::after{
     background: var(--white);
@@ -91,11 +294,10 @@ ul{
 .hamb-line::after{
     top: -5px;
 }
-
+ 
 .side-menu {
     display: none;
 } /* Hide checkbox */
-/* Toggle menu icon */
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
@@ -109,26 +311,4 @@ ul{
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
-}
-/* Responsiveness */
-@media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-    }
-    .menu li{
-        float: left;
-    }
-    .menu a:hover{
-        background-color: transparent;
-        color: var(--gray);
-
-    }
-
-    .hamb{
-        display: none;
-    }
 }

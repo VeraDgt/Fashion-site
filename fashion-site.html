@@ -14,26 +14,30 @@
     <title>Fashion shop</title>
   </head>
   <body>
-    <header class="navbar">
-      <a class="logo" href="#">Your Logo</a>
-      <nav class="nav">
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Lookbook</li>
-          <li>Features</li>
-          <li>Pages</li>
-          <li>Blog</li>
-        </ul>
-      </nav>
-      <div class="shopping">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+    <header class="header">
+      <div class="menu-wrap">
+        <a class="logo" href="#">Your Logo</a>
+        <!-- Hamburger icon -->
+        <div class="mobile-menu-wrap">
+          <input class="side-menu" type="checkbox" id="side-menu" />
+          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+          <nav class="nav">
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="shopping">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
       </div>
-      <!-- Hamburger icon -->
-      <input class="side-menu" type="checkbox" id="side-menu" />
-      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
     </header>
     <aside class="promo-wrapper">
       <img class="promo" src="/img/coll.png" alt="Collusion" />
